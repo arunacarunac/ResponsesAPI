@@ -1,0 +1,22 @@
+# Virtual environments
+env-responses-api/
+.venv/
+venv/
+env/
+
+# Secrets / local config
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+
+# Editor/OS
+.vscode/
+Thumbs.db
+.DS_Store
