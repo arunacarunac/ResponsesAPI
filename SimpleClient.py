@@ -126,11 +126,6 @@ def main(argv: Optional[List[str]] = None) -> int:
         help="User prompt to send to the model.",
     )
     parser.add_argument(
-        "--system",
-        default=None,
-        help="Optional system instruction.",
-    )
-    parser.add_argument(
         "--chain",
         action="store_true",
         help="Chain of prompt responses",
@@ -152,7 +147,6 @@ def main(argv: Optional[List[str]] = None) -> int:
             client=client,
             deployment=deployment,
             prompt=args.prompt,
-            system_prompt=args.system,
             stream=args.stream,
             chain=args.chain,
         )
