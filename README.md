@@ -35,9 +35,6 @@ python SimpleClient.py --prompt "Say hello."
 # Stream the response
 python SimpleClient.py --prompt "Tell me a story." --stream
 
-# Add an optional system instruction
-python SimpleClient.py --prompt "Summarize quantum computing." --system "You are a helpful assistant."
-
 # Chain responses (follow-up explanation at freshman level)
 python SimpleClient.py --prompt "Explain neural networks." --chain
 ```
@@ -47,6 +44,5 @@ python SimpleClient.py --prompt "Explain neural networks." --chain
 | Argument | Required | Description |
 |----------|----------|-------------|
 | `--prompt` | Yes | User prompt to send to the model |
-| `--system` | No | Optional system instruction |
 | `--stream` | No | Stream the response as it arrives |
 | `--chain` | No | Follow up with a freshman-level explanation |
